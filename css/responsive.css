@@ -1,0 +1,457 @@
+@media (min-width:1024px) {
+    .card:not(.pricing-section .card):hover {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .container {
+        max-width: 768px;
+    }
+
+    nav.sticky {
+        background: white;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .empower {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+        
+    .empower-left {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .empower-actions {
+        justify-content: center;
+    }
+
+    /* KEY BENEFITS */
+    .key-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items:center;
+        gap: 15px;
+    }
+
+    .card {
+        transition: none;
+        width: 80%
+    }
+
+    /* PERSPECTIVE */
+    .perspective .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perspective-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 0 40px;
+    }
+
+    .perspective h2 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .why-front .caption {
+        padding-top: 25px;
+    }
+
+    .featured-video {
+        padding-bottom: 60px;
+    }
+
+    #play-button {
+        left: 350px;
+        top: 110px;
+    }
+
+    .exec {
+        margin-bottom: 40px;
+    }
+
+    .exec .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .exec-quote{
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .dots {
+        top: 104px;
+        left: -50px;
+    }
+
+    .trusted-companies-section {
+        margin-bottom: 75px;
+    }
+
+    .trusted-companies {
+        justify-content: space-between;
+    }
+
+    .pricing-section > div:nth-child(2) {
+        grid-template-columns: repeat(2, minmax(250px,1fr));
+    }
+
+    .pricing {
+        grid-column: 1 / span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .price > span {
+        font-size: 50px;
+    }
+
+    .hire-us .container {
+        flex-direction: column;
+    }
+
+    .hire-us-testimonial {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+        gap: 50px;
+    }
+
+    .testimony {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-quote {
+        padding-bottom: 0;
+    }
+
+    .testimonial-profiles {
+        margin-top: 30px;
+    }
+
+    .app-wrapper {
+        width: 80%;
+        padding: 30px;
+        margin: 0 0 30px;
+    }
+
+    .application {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 300px repeat(2, 1fr);
+        margin: 100px 30px 40px
+    }
+
+    .front-contact {
+        grid-row: 1 / span 2;
+    }
+
+    [aria-controls="navbarDropdown"] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+        margin-top: 80px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        justify-items: center;
+        background-color: white;
+        padding: 60px 100px 100%;
+        z-index: -1;
+        border-top: 1px solid #f4f4f4;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    #buy-now {
+        grid-column: 1 / span 5;
+        margin: 15px 0;
+    }
+
+    nav.toggled-top  {
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        min-width: 360px;
+    }
+
+    nav {
+        padding-left: 35px;
+    }
+
+    .empower {
+        padding: 0;
+        padding-top: 100px;
+    }
+
+    .empower h1 {
+        font-size: 34px;
+    }
+
+    .empower p {
+        padding: 10px;
+    }
+
+    .logo-icons {
+        width: 100px;
+    }
+
+    #l-google {
+        justify-self: right;
+        left: -10px;
+    }    
+
+    #l-atlassian {
+        left: 0;
+        animation-delay: 0.2s;
+    }
+    
+    #l-asana {
+        left: 30px;
+        animation-delay: 0.8s;
+    }
+    
+    #l-paypal {
+        bottom: 50px;
+        right: 10px;
+        animation-delay: 0.3s;
+    }
+    
+    #l-weave {
+        bottom: 50px;
+        left: 50px;
+        animation-delay: 0.4s;
+    }
+    
+    #l-google-a {
+        left: 75px;
+        top: -30px;
+        animation-delay: 0.5s;
+    }
+    
+    #l-calendar {
+        left: 10px;
+        top: -20px;
+        animation-delay: 0.6s;
+    }
+
+    .key-benefits .caption p {
+        padding: 0 50px;
+    }
+
+    .key-cards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        gap: 25px;
+    }
+
+    .perspective {
+        padding: 0;
+    }
+
+    .perspective h2 {
+        margin: 30px 60px;
+    }
+
+    .why-front .caption {
+        padding-bottom: 0;
+    }
+
+    .why-front p {
+        margin: 15px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 30px;
+        padding-bottom: 60px;
+        gap: 20px;
+        width: fit-content;
+    }
+
+    .outer-circle {
+        margin-right: 25px;
+    }
+
+    .features span {
+        display: none;
+        visibility: hidden;
+    }
+
+    .feature {
+        flex-direction: row;
+        width: fit-content;
+    }
+
+    .featured-video  video {
+        width: 100%;
+        margin: 0;
+    }
+
+    #play-button {
+        display: none;
+    }
+
+    .pretty {
+        width: 360px;
+        justify-content: right;
+    }
+
+    .dots {
+        width: 150px;
+        top: 80px;
+        left: 15px;
+    }
+
+    .exec-profile {
+        width: 280px;
+        padding-right: 25px;
+    }
+
+    .trusted-companies {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pricing-section > div:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    .pricing {
+        padding: 40px;
+        grid-column: 1 / 1;
+        width: 275px;
+    }
+
+    .price {
+        padding: 40px 0;
+        margin-top: 0;
+    }
+
+    .price-info {
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6em;
+    }
+
+    .hire-us-testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-wrapper {
+        padding: 20px;
+    }
+
+    .application {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 40px) 150px repeat(3, auto);
+    }
+
+    #extra-info, #privacy-policy, #email-sub-wrapper, #get-started {
+        grid-column: 1 / 1;
+    }
+
+    .links {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 100px 0 40px;
+        text-align: center;
+    }
+
+    .links div {
+        gap: 25px;
+    }
+
+    .front-contact {
+        padding-bottom: 30px;
+    }
+
+    .links div h2 {
+        margin: 0;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .socials-language {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .socials {
+        display: flex;
+        gap: 20px;
+    }
+
+    .copyright-authorization {
+        margin-bottom: 50px;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        position: absolute;
+        background-color: white;
+        padding: 60px 100px 100%;
+        z-index: -1;
+        border-top: 1px solid #f4f4f4;
+    }
+
+    #buy-now {
+        grid-column: 1 / 1;
+        margin: 15px 0;
+    }
+}
